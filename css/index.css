@@ -57,15 +57,22 @@ a:hover {
     width:246px;
 }
 
-.login-field:focus{
+.login-field:focus {
     border-bottom:1px Solid #444b7d;
     transition:border .1s
 }
 
-.pass-text{
+.pass-text {
     color:#666;
     margin-left:64px;
     margin-top:195px;
+    position:absolute;
+}
+
+.registr-pass-text {
+    color:#666;
+    margin-left:64px;
+    margin-top:175px;
     position:absolute;
 }
 
@@ -83,6 +90,24 @@ a:hover {
 }
 
 .pass-field:focus {
+    border-bottom:1px Solid #444b7d;
+    transition:border .1s;
+}
+
+.registr-pass-field {
+    border:1px Solid #fff;
+    border-bottom:1px Solid #e3e8e6;
+    left:0;
+    right:0;
+    margin:auto;
+    margin-top:203px;
+    padding:10px;
+    padding-left:1px;
+    position:absolute;
+    width:246px; 
+}
+
+.registr-pass-field:focus {
     border-bottom:1px Solid #444b7d;
     transition:border .1s;
 }
@@ -163,7 +188,7 @@ a:hover {
 .alias-text {
     color:#666;
     margin-left:64px;
-    margin-top:280px;
+    margin-top:260px;
     position:absolute;
 }
 
@@ -173,7 +198,7 @@ a:hover {
     left:0;
     right:0;
     margin:auto;
-    margin-top:308px;
+    margin-top:288px;
     padding:10px;
     padding-left:1px;
     position:absolute;
@@ -196,7 +221,7 @@ a:hover {
     left:0;
     right:0;
     margin:auto;
-    margin-top:370px;
+    margin-top:350px;
     position:absolute;
     width:266px;
     transition:background .2s;
@@ -239,7 +264,7 @@ a:hover {
     margin: auto;
     margin-top: auto;
     position: absolute;
-    margin-top: 425px;
+    margin-top: 405px;
 }
 
 .recover-index {
@@ -250,7 +275,7 @@ a:hover {
     margin: auto;
     margin-top: auto;
     position: absolute;
-    margin-top: 230px;
+    margin-top: 225px;
 }
 
 .pass-container-recovery {

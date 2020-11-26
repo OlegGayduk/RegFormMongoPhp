@@ -24,11 +24,11 @@ if(isset($_COOKIE['recovery_code']) && isset($_COOKIE['email'])) {
                     
                     if($res != NULL) {
 
-                    	setcookie("recovery_code", "", time() - 36000);
-                    	setcookie("email", "", time() - 36000);
+                    	setcookie("recovery_code", "", time() - 600);
+                    	setcookie("email", "", time() - 600);
 
-                    	setcookie("id", $res['_id'], time() + 50000);
-                        setcookie("pass", $pass, time() + 50000);
+                    	setcookie("id", $res['_id'], time() + 36000);
+                        setcookie("pass", $pass, time() + 36000);
 
                         header("Location:welcome.php");
                     } else {

@@ -34,8 +34,8 @@ if(isset($_POST['login']) && isset($_POST['pass']) && isset($_POST['alias'])) {
 
                             $id = $res['id'];
 
-                            setcookie("id", $id, time() + 50000);
-                            setcookie("pass", $pass, time() + 50000);
+                            setcookie("id", $id, time() + 36000);
+                            setcookie("pass", $pass, time() + 36000);
 
                             header("Location:welcome.php");
 

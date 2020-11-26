@@ -22,14 +22,14 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['pass'])) {
 	        	header("Location:../index.php");
 	        }
 	    } else {
-	    	setcookie("id", "", time() - 50000); 				
-            setcookie("pass", "", time() - 50000);
+	    	setcookie("id", "", time() - 36000); 				
+            setcookie("pass", "", time() - 36000);
 
             header("Location:../index.php");
 	    }
 	} else {
-		setcookie("id", "", time() - 50000); 				
-        setcookie("pass", "", time() - 50000);	
+		setcookie("id", "", time() - 36000); 				
+        setcookie("pass", "", time() - 36000);	
 
         header("Location:../index.php");
 	}

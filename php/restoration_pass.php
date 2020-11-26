@@ -24,8 +24,8 @@ if(isset($_COOKIE['recovery_code']) && isset($_COOKIE['email'])) {
                     
                     if($res != NULL) {
 
-                    	setcookie("recovery_code", "", time() - 600);
-                    	setcookie("email", "", time() - 600);
+                    	setcookie("recovery_code", "", time() - 1800);
+                    	setcookie("email", "", time() - 1800);
 
                     	setcookie("id", $res['_id'], time() + 36000);
                         setcookie("pass", $pass, time() + 36000);
